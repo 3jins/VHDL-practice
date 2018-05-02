@@ -1,0 +1,7 @@
+[Inputs]
+power
+clk
+=DIP[1:0]=
+[Outputs]
+=LED[23:0]=
+[BiDir]

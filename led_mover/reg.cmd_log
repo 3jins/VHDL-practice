@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/emhw_practice/led_mover/reg.xst" -ofn "C:/emhw_practice/led_mover/reg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1500-fg456-4 reg.ngc reg.ngd  
+map -intstyle ise -p xc3s1500-fg456-4 -cm area -ir off -pr off -c 100 -o reg_map.ncd reg.ngd reg.pcf 
+par -w -intstyle ise -ol high -t 1 reg_map.ncd reg.ncd reg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reg.twx reg.ncd -o reg.twr reg.pcf 

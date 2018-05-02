@@ -1,0 +1,42 @@
+NET clk			LOC = AB12;
+#NET reset		LOC = C2;
+
+// Input push
+#NET push			LOC = D1;
+#NET led_reset	LOC = E4;
+
+// Input Dipswitches
+NET power		LOC = C2 | CLOCK_DEDICATED_ROUTE = FALSE;
+NET DIP<0>		LOC = D1;
+NET DIP<1>		LOC = E4;
+#NET DIP<3>		LOC = D4;
+#NET DIP<4>		LOC = F5;
+#NET DIP<5>		LOC = F2;
+#NET DIP<6>		LOC = G1;
+#NET DIP<7>		LOC = H1;
+
+// Output LED
+NET LED<0>		LOC = N3;
+NET LED<1>		LOC = N2;
+NET LED<2>		LOC = N1;
+NET LED<3>		LOC = M6;
+NET LED<4>		LOC = M5;
+NET LED<5>		LOC = M4;
+NET LED<6>		LOC = M3;
+NET LED<7>		LOC = M2;
+NET LED<8>		LOC = C22;
+NET LED<9>		LOC = L21;
+NET LED<10>		LOC = L22;
+NET LED<11>		LOC = W16;
+NET LED<12>		LOC = V14;
+NET LED<13>		LOC = V13;
+NET LED<14>		LOC = V12;
+NET LED<15>		LOC = Y12;
+NET LED<16>		LOC = Y1;
+NET LED<17>		LOC = W4;
+NET LED<18>		LOC = W3;
+NET LED<19>		LOC = W2;
+NET LED<20>		LOC = U2;
+NET LED<21>		LOC = T3;
+NET LED<22>		LOC = H2;
+NET LED<23>		LOC = L2;

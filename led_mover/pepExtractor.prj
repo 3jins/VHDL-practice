@@ -1,0 +1,4 @@
+work	"clkdivider.vhd"
+work	"dff.vhd"
+work	"led_mover.vhd"
+work	"reg.vhd"

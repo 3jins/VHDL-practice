@@ -1,0 +1,442 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: led_mover.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "led_mover.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "led_mover"
+Output Format                      : NGC
+Target Device                      : xc3s2000-4-fg456
+
+---- Source Options
+Top Module Name                    : led_mover
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/fucker/led_mover/dff.vhd" in Library work.
+Architecture behavioral of Entity dff is up to date.
+Compiling vhdl file "D:/fucker/led_mover/clkdivider.vhd" in Library work.
+Architecture behavioral of Entity clkdivider is up to date.
+Compiling vhdl file "D:/fucker/led_mover/reg.vhd" in Library work.
+Architecture behavioral of Entity reg is up to date.
+Compiling vhdl file "D:/fucker/led_mover/led_mover.vhd" in Library work.
+Entity <led_mover> compiled.
+Entity <led_mover> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <led_mover> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clkdivider> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dff> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <led_mover> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/fucker/led_mover/led_mover.vhd" line 89: Mux is complete : default of case is discarded
+Entity <led_mover> analyzed. Unit <led_mover> generated.
+
+Analyzing Entity <clkdivider> in library <work> (Architecture <behavioral>).
+Entity <clkdivider> analyzed. Unit <clkdivider> generated.
+
+Analyzing Entity <reg> in library <work> (Architecture <behavioral>).
+Entity <reg> analyzed. Unit <reg> generated.
+
+Analyzing Entity <dff> in library <work> (Architecture <behavioral>).
+Entity <dff> analyzed. Unit <dff> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clkdivider>.
+    Related source file is "D:/fucker/led_mover/clkdivider.vhd".
+    Found 1-bit register for signal <dclk>.
+    Found 4-bit register for signal <cur_led>.
+    Found 24-bit up counter for signal <cnt_data>.
+    Found 4-bit 4-to-1 multiplexer for signal <cur_led$mux0001>.
+    Found 4-bit register for signal <dcnt_data>.
+    Found 4-bit subtractor for signal <dcnt_data$addsub0000> created at line 35.
+    Found 4-bit adder for signal <dcnt_data$addsub0001> created at line 28.
+    Found 4-bit 4-to-1 multiplexer for signal <dcnt_data$mux0003>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 Multiplexer(s).
+Unit <clkdivider> synthesized.
+
+
+Synthesizing Unit <dff>.
+    Related source file is "D:/fucker/led_mover/dff.vhd".
+    Found 1-bit register for signal <data>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff> synthesized.
+
+
+Synthesizing Unit <reg>.
+    Related source file is "D:/fucker/led_mover/reg.vhd".
+Unit <reg> synthesized.
+
+
+Synthesizing Unit <led_mover>.
+    Related source file is "D:/fucker/led_mover/led_mover.vhd".
+Unit <led_mover> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Registers                                            : 27
+ 1-bit register                                        : 25
+ 4-bit register                                        : 2
+# Multiplexers                                         : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+# Multiplexers                                         : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <led_mover> ...
+
+Optimizing unit <clkdivider> ...
+
+Optimizing unit <reg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <LED_REG/reg0[6].reg/data> in Unit <led_mover> is equivalent to the following FF/Latch, which will be removed : <LED_REG/reg0[0].reg/data> 
+INFO:Xst:2261 - The FF/Latch <LED_REG/reg0[14].reg/data> in Unit <led_mover> is equivalent to the following FF/Latch, which will be removed : <LED_REG/reg0[8].reg/data> 
+INFO:Xst:2261 - The FF/Latch <LED_REG/reg0[22].reg/data> in Unit <led_mover> is equivalent to the following FF/Latch, which will be removed : <LED_REG/reg0[16].reg/data> 
+Found area constraint ratio of 100 (+ 5) on block led_mover, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 54
+ Flip-Flops                                            : 54
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : led_mover.ngr
+Top Level Output File Name         : led_mover
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 144
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 23
+#      LUT2                        : 12
+#      LUT2_D                      : 2
+#      LUT3                        : 3
+#      LUT4                        : 40
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MUXCY                       : 29
+#      MUXF5                       : 3
+#      MUXF6                       : 1
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 54
+#      FD                          : 7
+#      FDE                         : 22
+#      FDR                         : 24
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 3
+#      OBUF                        : 24
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s2000fg456-4 
+
+ Number of Slices:                       44  out of  20480     0%  
+ Number of Slice Flip Flops:             54  out of  40960     0%  
+ Number of 4 input LUTs:                 85  out of  40960     0%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    333     8%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 54    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.237ns (Maximum Frequency: 121.403MHz)
+   Minimum input arrival time before clock: 6.759ns
+   Maximum output required time after clock: 7.241ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.237ns (frequency: 121.403MHz)
+  Total number of paths / destination ports: 1261 / 80
+-------------------------------------------------------------------------
+Delay:               8.237ns (Levels of Logic = 8)
+  Source:            DVD/cnt_data_14 (FF)
+  Destination:       DVD/cnt_data_23 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DVD/cnt_data_14 to DVD/cnt_data_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   1.216  DVD/cnt_data_14 (DVD/cnt_data_14)
+     LUT3:I0->O            1   0.551   0.000  DVD/cnt_data_cmp_eq00001_wg_lut<0> (DVD/cnt_data_cmp_eq00001_wg_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  DVD/cnt_data_cmp_eq00001_wg_cy<0> (DVD/cnt_data_cmp_eq00001_wg_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  DVD/cnt_data_cmp_eq00001_wg_cy<1> (DVD/cnt_data_cmp_eq00001_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  DVD/cnt_data_cmp_eq00001_wg_cy<2> (DVD/cnt_data_cmp_eq00001_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  DVD/cnt_data_cmp_eq00001_wg_cy<3> (DVD/cnt_data_cmp_eq00001_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  DVD/cnt_data_cmp_eq00001_wg_cy<4> (DVD/cnt_data_cmp_eq00001_wg_cy<4>)
+     MUXCY:CI->O          11   0.281   1.339  DVD/cnt_data_cmp_eq00001_wg_cy<5> (DVD/cnt_data_cmp_eq00001_wg_cy<5>)
+     LUT2:I1->O           24   0.551   1.797  DVD/cnt_data_cmp_eq00001 (DVD/cnt_data_cmp_eq0000)
+     FDR:R                     1.026          DVD/cnt_data_0
+    ----------------------------------------
+    Total                      8.237ns (3.885ns logic, 4.352ns route)
+                                       (47.2% logic, 52.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 88 / 30
+-------------------------------------------------------------------------
+Offset:              6.759ns (Levels of Logic = 4)
+  Source:            DIP<1> (PAD)
+  Destination:       LED_REG/reg0[14].reg/data (FF)
+  Destination Clock: clk rising
+
+  Data Path: DIP<1> to LED_REG/reg0[14].reg/data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.821   1.329  DIP_1_IBUF (DIP_1_IBUF)
+     LUT4:I1->O           20   0.551   1.884  led_reg_in<0>21 (N11)
+     LUT2_D:I0->O          1   0.551   0.869  led_reg_in<16>_SW0 (N22)
+     LUT4:I2->O            1   0.551   0.000  led_reg_in<14> (led_reg_in<14>)
+     FDE:D                     0.203          LED_REG/reg0[14].reg/data
+    ----------------------------------------
+    Total                      6.759ns (2.677ns logic, 4.082ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              7.241ns (Levels of Logic = 1)
+  Source:            LED_REG/reg0[22].reg/data (FF)
+  Destination:       LED<22> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: LED_REG/reg0[22].reg/data to LED<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.720   0.877  LED_REG/reg0[22].reg/data (LED_REG/reg0[22].reg/data)
+     OBUF:I->O                 5.644          LED_16_OBUF (LED<16>)
+    ----------------------------------------
+    Total                      7.241ns (6.364ns logic, 0.877ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.43 secs
+ 
+--> 
+
+Total memory usage is 258596 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
