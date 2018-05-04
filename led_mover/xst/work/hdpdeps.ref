@@ -1,26 +1,11 @@
-V3 27
+V3 31
 FL C:/emhw_practice/led_mover/dff.vhd 2018/04/30.19:37:20 P.20131013
 FL C:/emhw_practice/led_mover/led_mover.vhd 2018/04/30.19:54:52 P.20131013
 FL C:/emhw_practice/led_mover/reg.vhd 2018/04/30.19:36:29 P.20131013
 FL D:/fucker/led_mover/clkdivider.vhd 2018/05/02.01:36:20 P.20131013
-EN work/clkdivider 1525192852 FL D:/fucker/led_mover/clkdivider.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/clkdivider/Behavioral 1525192853 \
-      FL D:/fucker/led_mover/clkdivider.vhd EN work/clkdivider 1525192852
 FL D:/fucker/led_mover/dff.vhd 2018/05/01.16:11:36 P.20131013
-EN work/dff 1525192850 FL D:/fucker/led_mover/dff.vhd PB ieee/std_logic_1164 1381692176
-AR work/dff/Behavioral 1525192851 \
-      FL D:/fucker/led_mover/dff.vhd EN work/dff 1525192850
 FL D:/fucker/led_mover/led_mover.vhd 2018/05/02.01:40:46 P.20131013
-EN work/led_mover 1525192856 FL D:/fucker/led_mover/led_mover.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/led_mover/Behavioral 1525192857 \
-      FL D:/fucker/led_mover/led_mover.vhd EN work/led_mover 1525192856 \
-      CP clkdivider CP reg
 FL D:/fucker/led_mover/reg.vhd 2018/05/01.16:10:33 P.20131013
-EN work/reg 1525192854 FL D:/fucker/led_mover/reg.vhd PB ieee/std_logic_1164 1381692176
-AR work/reg/Behavioral 1525192855 \
-      FL D:/fucker/led_mover/reg.vhd EN work/reg 1525192854 CP dff
 FL D:/fucker/led_mover/reg1.vhd 2018/04/30.22:45:04 P.20131013
 EN work/reg1 1525096766 FL D:/fucker/led_mover/reg1.vhd PB ieee/std_logic_1164 1381692176
 AR work/reg1/Behavioral 1525096767 \
@@ -33,3 +18,31 @@ FL D:/fucker/led_mover/reg3.vhd 2018/04/30.22:49:31 P.20131013
 EN work/reg3 1525096770 FL D:/fucker/led_mover/reg3.vhd PB ieee/std_logic_1164 1381692176
 AR work/reg3/Behavioral 1525096771 \
       FL D:/fucker/led_mover/reg3.vhd EN work/reg3 1525096770 CP dff
+FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/clkdivider.vhd 2018/05/01.17:24:36 P.20131013
+EN work/clkdivider 1525411995 \
+      FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/clkdivider.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/clkdivider/Behavioral 1525411996 \
+      FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/clkdivider.vhd \
+      EN work/clkdivider 1525411995
+FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/dff.vhd 2018/05/04.14:23:03 P.20131013
+EN work/dff 1525411993 \
+      FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/dff.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/dff/Behavioral 1525411994 \
+      FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/dff.vhd \
+      EN work/dff 1525411993
+FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.vhd 2018/05/04.14:33:08 P.20131013
+EN work/led_mover 1525411999 \
+      FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/led_mover/Behavioral 1525412000 \
+      FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.vhd \
+      EN work/led_mover 1525411999 CP clkdivider CP reg
+FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/reg.vhd 2018/05/04.14:23:19 P.20131013
+EN work/reg 1525411997 \
+      FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/reg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/reg/Behavioral 1525411998 \
+      FL D:/VHDL-practice-master/VHDL-practice-master/led_mover/reg.vhd \
+      EN work/reg 1525411997 CP dff

@@ -22,15 +22,6 @@ begin
 				data <= data;
 			end if;
 		end if;
---		if reset = '1' then
---			data <= '0';
---		elsif en = '1' then
---			if clk'event and clk='1' then
---				data <= d;
---			else
---				data <= data;
---			end if;
---		end if;
 	end process;
 	
 	q <= data;

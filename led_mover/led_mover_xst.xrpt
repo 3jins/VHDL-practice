@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed May 02 01:40:49 2018">
+  <application stringID="Xst" timeStamp="Fri May 04 14:33:13 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Bandizip\7z"/>
+          <item stringID="value" value="D:\14.7\ISE_DS\ISE\\lib\nt64;D:\14.7\ISE_DS\ISE\\bin\nt64;D:\14.7\ISE_DS\ISE\bin\nt64;D:\14.7\ISE_DS\ISE\lib\nt64;D:\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\14.7\ISE_DS\PlanAhead\bin;D:\14.7\ISE_DS\EDK\bin\nt64;D:\14.7\ISE_DS\EDK\lib\nt64;D:\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\14.7\ISE_DS\EDK\gnuwin\bin;D:\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\14.7\ISE_DS\common\bin\nt64;D:\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2017.4.210\windows\mpi\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Bandizip\7z"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -20,7 +20,7 @@
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+          <item stringID="value" value="D:\14.7\ISE_DS\ISE\"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
@@ -28,15 +28,15 @@
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+          <item stringID="value" value="D:\14.7\ISE_DS\ISE"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+          <item stringID="value" value="D:\14.7\ISE_DS\EDK"/>
         </row>
         <row stringID="row" value="6">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="D:\14.7\ISE_DS\PlanAhead"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
@@ -154,27 +154,24 @@
         <item stringID="XST_IOS" value="28"/>
       </section>
       <section stringID="XST_CELL_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="144">
+        <item dataType="int" stringID="XST_BELS" value="138">
           <item dataType="int" stringID="XST_GND" value="1"/>
           <item dataType="int" stringID="XST_INV" value="2"/>
           <item dataType="int" stringID="XST_LUT1" value="23"/>
-          <item dataType="int" stringID="XST_LUT2" value="12"/>
-          <item dataType="int" stringID="XST_LUT2D" value="2"/>
-          <item dataType="int" stringID="XST_LUT3" value="3"/>
-          <item dataType="int" stringID="XST_LUT4" value="40"/>
-          <item dataType="int" stringID="XST_LUT4D" value="1"/>
-          <item dataType="int" stringID="XST_LUT4L" value="2"/>
+          <item dataType="int" stringID="XST_LUT2" value="3"/>
+          <item dataType="int" stringID="XST_LUT2D" value="1"/>
+          <item dataType="int" stringID="XST_LUT3" value="4"/>
+          <item dataType="int" stringID="XST_LUT4" value="42"/>
+          <item dataType="int" stringID="XST_LUT4L" value="1"/>
           <item dataType="int" stringID="XST_MUXCY" value="29"/>
-          <item dataType="int" stringID="XST_MUXF5" value="3"/>
-          <item dataType="int" stringID="XST_MUXF6" value="1"/>
+          <item dataType="int" stringID="XST_MUXF5" value="7"/>
           <item dataType="int" stringID="XST_VCC" value="1"/>
           <item dataType="int" stringID="XST_XORCY" value="24"/>
         </item>
         <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="54">
-          <item dataType="int" stringID="XST_FD" value="7"/>
+          <item dataType="int" stringID="XST_FD" value="8"/>
           <item dataType="int" stringID="XST_FDE" value="22"/>
           <item dataType="int" stringID="XST_FDR" value="24"/>
-          <item dataType="int" stringID="XST_FDS" value="1"/>
         </item>
         <item dataType="int" stringID="XST_CLOCK_BUFFERS" value="1">
           <item dataType="int" stringID="XST_BUFGP" value="1"/>
@@ -187,9 +184,9 @@
     </section>
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="3s2000fg456-4"/>
-      <item AVAILABLE="20480" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="44"/>
+      <item AVAILABLE="20480" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="41"/>
       <item AVAILABLE="40960" dataType="int" label="Number of Slice Flip Flops" stringID="XST_NUMBER_OF_SLICE_FLIP_FLOPS" value="54"/>
-      <item AVAILABLE="40960" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="85"/>
+      <item AVAILABLE="40960" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="76"/>
       <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="28"/>
       <item AVAILABLE="333" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="28"/>
       <item AVAILABLE="8" dataType="int" label="Number of GCLKs" stringID="XST_NUMBER_OF_GCLKS" value="1"/>
@@ -200,7 +197,7 @@
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="4"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="3"/>
     </section>
   </application>
 

@@ -5,16 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/fucker/led_mover/led_mover.vhd</arg>&quot; line <arg fmt="%d" index="2">89</arg>: Mux is complete : default of case is discarded
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">reg0[0].reg/data</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reg0[6].reg/data&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">LED_REG/reg0[6].reg/data</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">led_mover</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LED_REG/reg0[0].reg/data&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">reg0[8].reg/data</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reg0[14].reg/data&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">LED_REG/reg0[14].reg/data</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">led_mover</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LED_REG/reg0[8].reg/data&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">LED_REG/reg0[22].reg/data</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">led_mover</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LED_REG/reg0[16].reg/data&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">LED_REG/reg0[22].reg/data</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">led_mover</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LED_REG/reg0[16].reg/data&gt; </arg>
 </msg>
 
 </messages>

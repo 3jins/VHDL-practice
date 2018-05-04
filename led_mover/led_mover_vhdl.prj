@@ -1,4 +1,4 @@
-vhdl work "D:\fucker\led_mover\dff.vhd"
-vhdl work "D:\fucker\led_mover\reg.vhd"
-vhdl work "D:\fucker\led_mover\clkdivider.vhd"
-vhdl work "D:\fucker\led_mover\led_mover.vhd"
+vhdl work "D:\VHDL-practice-master\VHDL-practice-master\led_mover\dff.vhd"
+vhdl work "D:\VHDL-practice-master\VHDL-practice-master\led_mover\reg.vhd"
+vhdl work "D:\VHDL-practice-master\VHDL-practice-master\led_mover\clkdivider.vhd"
+vhdl work "D:\VHDL-practice-master\VHDL-practice-master\led_mover\led_mover.vhd"

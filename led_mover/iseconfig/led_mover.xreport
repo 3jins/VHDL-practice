@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-01T21:17:57</DateModified>
+  <DateModified>2018-05-04T14:18:08</DateModified>
   <ModuleName>led_mover</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/fucker/led_mover/iseconfig/led_mover.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/fucker/led_mover\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/VHDL-practice-master/VHDL-practice-master/led_mover/iseconfig/led_mover.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/VHDL-practice-master/VHDL-practice-master/led_mover\</ImplementationReportsDirectory>
   <DateInitialized>2018-04-30T20:18:41</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

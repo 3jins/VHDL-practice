@@ -2,9 +2,9 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
--n 3 -fastpaths -xml led_mover.twx led_mover.ncd -o led_mover.twr led_mover.pcf
--ucf led_mover.ucf
+D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n 3
+-fastpaths -xml led_mover.twx led_mover.ncd -o led_mover.twr led_mover.pcf -ucf
+led_mover.ucf
 
 Design file:              led_mover.ncd
 Physical constraint file: led_mover.pcf
@@ -45,9 +45,9 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-DIP<0>      |    8.012(R)|   -1.787(R)|clk_BUFGP         |   0.000|
-DIP<1>      |    8.290(R)|   -1.516(R)|clk_BUFGP         |   0.000|
-power       |    8.596(R)|   -2.254(R)|clk_BUFGP         |   0.000|
+DIP<0>      |    7.268(R)|   -2.353(R)|clk_BUFGP         |   0.000|
+DIP<1>      |    7.725(R)|   -2.363(R)|clk_BUFGP         |   0.000|
+power       |    7.324(R)|   -2.500(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -55,30 +55,30 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-LED<0>      |    9.424(R)|clk_BUFGP         |   0.000|
-LED<1>      |    9.713(R)|clk_BUFGP         |   0.000|
-LED<2>      |    9.681(R)|clk_BUFGP         |   0.000|
-LED<3>      |   10.027(R)|clk_BUFGP         |   0.000|
-LED<4>      |   10.136(R)|clk_BUFGP         |   0.000|
-LED<5>      |   12.191(R)|clk_BUFGP         |   0.000|
-LED<6>      |   10.077(R)|clk_BUFGP         |   0.000|
-LED<7>      |   10.225(R)|clk_BUFGP         |   0.000|
-LED<8>      |   16.793(R)|clk_BUFGP         |   0.000|
-LED<9>      |   14.622(R)|clk_BUFGP         |   0.000|
-LED<10>     |   12.975(R)|clk_BUFGP         |   0.000|
-LED<11>     |   13.022(R)|clk_BUFGP         |   0.000|
-LED<12>     |   12.176(R)|clk_BUFGP         |   0.000|
-LED<13>     |   11.973(R)|clk_BUFGP         |   0.000|
-LED<14>     |   12.371(R)|clk_BUFGP         |   0.000|
-LED<15>     |   11.725(R)|clk_BUFGP         |   0.000|
-LED<16>     |   10.943(R)|clk_BUFGP         |   0.000|
-LED<17>     |   10.654(R)|clk_BUFGP         |   0.000|
-LED<18>     |   10.123(R)|clk_BUFGP         |   0.000|
-LED<19>     |   10.503(R)|clk_BUFGP         |   0.000|
-LED<20>     |   10.381(R)|clk_BUFGP         |   0.000|
-LED<21>     |   10.167(R)|clk_BUFGP         |   0.000|
-LED<22>     |   11.731(R)|clk_BUFGP         |   0.000|
-LED<23>     |   11.631(R)|clk_BUFGP         |   0.000|
+LED<0>      |    9.640(R)|clk_BUFGP         |   0.000|
+LED<1>      |    9.635(R)|clk_BUFGP         |   0.000|
+LED<2>      |    9.668(R)|clk_BUFGP         |   0.000|
+LED<3>      |    9.726(R)|clk_BUFGP         |   0.000|
+LED<4>      |   10.670(R)|clk_BUFGP         |   0.000|
+LED<5>      |    9.987(R)|clk_BUFGP         |   0.000|
+LED<6>      |    9.981(R)|clk_BUFGP         |   0.000|
+LED<7>      |    9.698(R)|clk_BUFGP         |   0.000|
+LED<8>      |   15.819(R)|clk_BUFGP         |   0.000|
+LED<9>      |   14.392(R)|clk_BUFGP         |   0.000|
+LED<10>     |   14.276(R)|clk_BUFGP         |   0.000|
+LED<11>     |   13.879(R)|clk_BUFGP         |   0.000|
+LED<12>     |   13.726(R)|clk_BUFGP         |   0.000|
+LED<13>     |   13.688(R)|clk_BUFGP         |   0.000|
+LED<14>     |   13.489(R)|clk_BUFGP         |   0.000|
+LED<15>     |   12.968(R)|clk_BUFGP         |   0.000|
+LED<16>     |   11.125(R)|clk_BUFGP         |   0.000|
+LED<17>     |   11.038(R)|clk_BUFGP         |   0.000|
+LED<18>     |   11.271(R)|clk_BUFGP         |   0.000|
+LED<19>     |   10.731(R)|clk_BUFGP         |   0.000|
+LED<20>     |   10.416(R)|clk_BUFGP         |   0.000|
+LED<21>     |   10.191(R)|clk_BUFGP         |   0.000|
+LED<22>     |   11.407(R)|clk_BUFGP         |   0.000|
+LED<23>     |   10.086(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -86,18 +86,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    8.357|         |         |         |
+clk            |    6.227|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed May 02 01:41:22 2018 
+Analysis completed Fri May 04 14:33:43 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 187 MB
+Peak Memory Usage: 186 MB
 
 
 

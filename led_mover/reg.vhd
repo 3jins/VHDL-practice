@@ -23,7 +23,6 @@ begin
 		reg: dff port map(
 						d=>led_input(n),
 						clk=>clk,
---						reset=>reset,
 						en=>en,
 						q=>output(n)
 		);

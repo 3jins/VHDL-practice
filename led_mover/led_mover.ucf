@@ -1,9 +1,4 @@
 NET clk			LOC = AB12;
-#NET reset		LOC = C2;
-
-// Input push
-#NET push			LOC = D1;
-#NET led_reset	LOC = E4;
 
 // Input Dipswitches
 NET power		LOC = C2 | CLOCK_DEDICATED_ROUTE = FALSE;

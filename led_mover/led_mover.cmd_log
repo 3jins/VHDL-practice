@@ -397,3 +397,22 @@ map -intstyle ise -p xc3s2000-fg456-4 -cm area -ir off -pr off -c 100 -o led_mov
 par -w -intstyle ise -ol high -t 1 led_mover_map.ncd led_mover.ncd led_mover.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml led_mover.twx led_mover.ncd -o led_mover.twr led_mover.pcf -ucf led_mover.ucf 
 bitgen -intstyle ise -f led_mover.ut led_mover.ncd 
+xst -intstyle ise -ifn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.xst" -ofn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_mover.ucf -p xc3s2000-fg456-4 led_mover.ngc led_mover.ngd  
+map -intstyle ise -p xc3s2000-fg456-4 -cm area -ir off -pr off -c 100 -o led_mover_map.ncd led_mover.ngd led_mover.pcf 
+par -w -intstyle ise -ol high -t 1 led_mover_map.ncd led_mover.ncd led_mover.pcf 
+bitgen -intstyle ise -f led_mover.ut led_mover.ncd 
+xst -intstyle ise -ifn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.xst" -ofn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_mover.ucf -p xc3s2000-fg456-4 led_mover.ngc led_mover.ngd  
+map -intstyle ise -p xc3s2000-fg456-4 -cm area -ir off -pr off -c 100 -o led_mover_map.ncd led_mover.ngd led_mover.pcf 
+par -w -intstyle ise -ol high -t 1 led_mover_map.ncd led_mover.ncd led_mover.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml led_mover.twx led_mover.ncd -o led_mover.twr led_mover.pcf -ucf led_mover.ucf 
+bitgen -intstyle ise -f led_mover.ut led_mover.ncd 
+xst -intstyle ise -ifn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.xst" -ofn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.syr" 
+xst -intstyle ise -ifn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.xst" -ofn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.syr" 
+xst -intstyle ise -ifn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.xst" -ofn "D:/VHDL-practice-master/VHDL-practice-master/led_mover/led_mover.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_mover.ucf -p xc3s2000-fg456-4 led_mover.ngc led_mover.ngd  
+map -intstyle ise -p xc3s2000-fg456-4 -cm area -ir off -pr off -c 100 -o led_mover_map.ncd led_mover.ngd led_mover.pcf 
+par -w -intstyle ise -ol high -t 1 led_mover_map.ncd led_mover.ncd led_mover.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml led_mover.twx led_mover.ncd -o led_mover.twr led_mover.pcf -ucf led_mover.ucf 
+bitgen -intstyle ise -f led_mover.ut led_mover.ncd 

@@ -43,8 +43,18 @@ begin
 	process(power, DIP, led_reg_out, dclk, cur_led)
 	begin
 		if power = '1' then
-			case DIP is
-				when "00" => -- stay still
+			if DIP = "00" or DIP = "10" or DIP = "01" then -- stay still / shift right / shift left
+				case cur_led is
+					when x"1" => led_reg_in <= x"BE1C08";
+					when x"2" => led_reg_in <= x"7D3810";
+					when x"3" => led_reg_in <= x"FB7120";
+					when x"4" => led_reg_in <= x"F7E341";
+					when x"5" => led_reg_in <= x"EFC782";
+					when x"0" => led_reg_in <= x"DF8E04";
+					when others => led_reg_in <= x"222222";	-- If there are a vertical LED line in the RIGHT side, it means dclk error
+				end case;
+			else -- blink
+				if dclk = '0' then	-- turn on
 					case cur_led is
 						when x"1" => led_reg_in <= x"BE1C08";
 						when x"2" => led_reg_in <= x"7D3810";
@@ -52,44 +62,12 @@ begin
 						when x"4" => led_reg_in <= x"F7E341";
 						when x"5" => led_reg_in <= x"EFC782";
 						when x"0" => led_reg_in <= x"DF8E04";
-						when others => led_reg_in <= x"222222";	-- If there are a vertical LED line in the RIGHT side, it means dclk error
+						when others => led_reg_in <= x"222222";
 					end case;
-				when "10" => -- shift right
-					case cur_led is
-						when x"1" => led_reg_in <= x"BE1C08";
-						when x"2" => led_reg_in <= x"7D3810";
-						when x"3" => led_reg_in <= x"FB7120";
-						when x"4" => led_reg_in <= x"F7E341";
-						when x"5" => led_reg_in <= x"EFC782";
-						when x"0" => led_reg_in <= x"DF8E04";
-						when others => led_reg_in <= x"222222";	-- If there are a vertical LED line in the RIGHT side, it means dclk error
-					end case;
-				when "01" => -- shift left
-					case cur_led is
-						when x"1" => led_reg_in <= x"BE1C08";
-						when x"2" => led_reg_in <= x"7D3810";
-						when x"3" => led_reg_in <= x"FB7120";
-						when x"4" => led_reg_in <= x"F7E341";
-						when x"5" => led_reg_in <= x"EFC782";
-						when x"0" => led_reg_in <= x"DF8E04";
-						when others => led_reg_in <= x"222222";	-- If there are a vertical LED line in the RIGHT side, it means dclk error
-					end case;
-				when "11" => -- blink
-					if dclk = '0' then
-						case cur_led is
-							when x"1" => led_reg_in <= x"BE1C08";
-							when x"2" => led_reg_in <= x"7D3810";
-							when x"3" => led_reg_in <= x"FB7120";
-							when x"4" => led_reg_in <= x"F7E341";
-							when x"5" => led_reg_in <= x"EFC782";
-							when x"0" => led_reg_in <= x"DF8E04";
-							when others => led_reg_in <= x"222222";
-						end case;
-					else
-						led_reg_in <= x"000000";
-					end if;
-				when others => led_reg_in <= x"101010";	-- If there are a vertical LED line in the LEFT side, it means dip switch error
-			end case;
+				else	-- turn off
+					led_reg_in <= x"000000";
+				end if;
+			end if;
 		else
 			led_reg_in <= x"000000";
 		end if;
