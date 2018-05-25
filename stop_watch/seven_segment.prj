@@ -1,0 +1,3 @@
+vhdl work "clock_divider_x4.vhd"
+vhdl work "key_matrix.vhd"
+vhdl work "seven_segment.vhd"

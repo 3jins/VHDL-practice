@@ -1,0 +1,35 @@
+V3 23
+FL D:/VHDL-practice/stop_watch/clock_divider_x4.vhd 2018/05/29.13:21:43 P.20131013
+EN work/clock_divider_x4 1527597050 \
+      FL D:/VHDL-practice/stop_watch/clock_divider_x4.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/clock_divider_x4/Behavioral 1527597051 \
+      FL D:/VHDL-practice/stop_watch/clock_divider_x4.vhd \
+      EN work/clock_divider_x4 1527597050
+FL D:/VHDL-practice/stop_watch/count0to5.vhd 2018/05/29.16:19:59 P.20131013
+EN work/count0to5 1527597048 FL D:/VHDL-practice/stop_watch/count0to5.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/count0to5/Behavioral 1527597049 \
+      FL D:/VHDL-practice/stop_watch/count0to5.vhd EN work/count0to5 1527597048
+FL D:/VHDL-practice/stop_watch/key_matrix.vhd 2018/05/29.21:30:28 P.20131013
+EN work/key_matrix 1527597052 FL D:/VHDL-practice/stop_watch/key_matrix.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/key_matrix/Behavioral 1527597053 \
+      FL D:/VHDL-practice/stop_watch/key_matrix.vhd EN work/key_matrix 1527597052 \
+      CP clock_divider_x4
+FL D:/VHDL-practice/stop_watch/main.vhd 2018/05/29.21:07:33 P.20131013
+EN work/main 1527597056 FL D:/VHDL-practice/stop_watch/main.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/main/Behavioral 1527597057 \
+      FL D:/VHDL-practice/stop_watch/main.vhd EN work/main 1527597056 \
+      CP clock_divider_x4 CP key_matrix CP seven_segment
+FL D:/VHDL-practice/stop_watch/seven_segment.vhd 2018/05/29.21:14:28 P.20131013
+EN work/seven_segment 1527597054 FL D:/VHDL-practice/stop_watch/seven_segment.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/seven_segment/Behavioral 1527597055 \
+      FL D:/VHDL-practice/stop_watch/seven_segment.vhd EN work/seven_segment 1527597054 \
+      CP count0to5
+FL F:/fucker/stop_watch/clock_divider_x4.vhd 2018/05/25.20:07:05 P.20131013
+FL F:/fucker/stop_watch/key_matrix.vhd 2018/05/25.20:00:44 P.20131013
+FL F:/fucker/stop_watch/main.vhd 2018/05/25.19:22:24 P.20131013
+FL F:/fucker/stop_watch/seven_segment.vhd 2018/05/25.19:02:17 P.20131013

@@ -1,0 +1,5 @@
+vhdl work "count0to5.vhd"
+vhdl work "clock_divider_x4.vhd"
+vhdl work "seven_segment.vhd"
+vhdl work "key_matrix.vhd"
+vhdl work "main.vhd"

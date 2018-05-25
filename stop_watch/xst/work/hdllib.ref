@@ -1,0 +1,10 @@
+EN seven_segment NULL D:/VHDL-practice/stop_watch/seven_segment.vhd sub00/vhpl05 1527597054
+AR key_matrix behavioral D:/VHDL-practice/stop_watch/key_matrix.vhd sub00/vhpl03 1527597053
+EN key_matrix NULL D:/VHDL-practice/stop_watch/key_matrix.vhd sub00/vhpl02 1527597052
+AR clock_divider_x4 behavioral D:/VHDL-practice/stop_watch/clock_divider_x4.vhd sub00/vhpl01 1527597051
+AR main behavioral D:/VHDL-practice/stop_watch/main.vhd sub00/vhpl09 1527597057
+EN main NULL D:/VHDL-practice/stop_watch/main.vhd sub00/vhpl04 1527597056
+EN count0to5 NULL D:/VHDL-practice/stop_watch/count0to5.vhd sub00/vhpl06 1527597048
+AR count0to5 behavioral D:/VHDL-practice/stop_watch/count0to5.vhd sub00/vhpl07 1527597049
+EN clock_divider_x4 NULL D:/VHDL-practice/stop_watch/clock_divider_x4.vhd sub00/vhpl00 1527597050
+AR seven_segment behavioral D:/VHDL-practice/stop_watch/seven_segment.vhd sub00/vhpl08 1527597055

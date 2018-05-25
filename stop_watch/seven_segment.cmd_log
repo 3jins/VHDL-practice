@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/fucker/stop_watch/seven_segment.xst" -ofn "F:/fucker/stop_watch/seven_segment.syr" 
+xst -intstyle ise -ifn "F:/fucker/stop_watch/seven_segment.xst" -ofn "F:/fucker/stop_watch/seven_segment.syr" 
