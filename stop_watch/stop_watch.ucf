@@ -1,5 +1,6 @@
 NET clk			LOC = AB12;
-NET rst		LOC = H5;
+NET rst			LOC = H5;
+#NET start		LOC = G5;
 
 // Input Dipswitches
 #NET power		LOC = C2 | CLOCK_DEDICATED_ROUTE = FALSE;

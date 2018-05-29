@@ -7,7 +7,7 @@ entity key_matrix is
 		clk		: in std_logic;
 		key_in	: in std_logic_vector(3 downto 0);
 		key_scan	: out std_logic_vector(3 downto 0);
-		key_data	: out std_logic_vector(3 downto 0)
+		key_data	: out std_logic_vector(23 downto 0)
 	);
 end key_matrix;
 
@@ -20,9 +20,9 @@ component clock_divider_x4 is
 	);
 end component;
 
-signal scan_cnt		: std_logic_vector(3 downto 0);
-signal key_data_int	: std_logic_vector(3 downto 0);
-signal key_in_int		: std_logic_vector(3 downto 0);
+signal scan_cnt		: std_logic_vector(3 downto 0);		-- input
+signal key_data_int	: std_logic_vector(23 downto 0);		-- output
+signal key_in_int		: std_logic_vector(3 downto 0);		-- input
 signal seg_clk			: std_logic;
 
 begin
@@ -52,43 +52,43 @@ begin
 			case scan_cnt is
 				when "1110" =>
 					if key_in_int = "1110" then
-						key_data_int <= X"1";
+						key_data_int(3 downto 0) <= X"1";
 					elsif key_in_int = "1101" then
-						key_data_int <= X"4";
+						key_data_int(3 downto 0) <= X"4";
 					elsif key_in_int = "1011" then
-						key_data_int <= X"7";
+						key_data_int(3 downto 0) <= X"7";
 					elsif key_in_int = "0111" then
-						key_data_int <= X"0";
+						key_data_int(3 downto 0) <= X"0";
 					end if;
 				when "1101" =>
 					if key_in_int = "1110" then
-						key_data_int <= X"2";
+						key_data_int(3 downto 0) <= X"2";
 					elsif key_in_int = "1101" then
-						key_data_int <= X"5";
+						key_data_int(3 downto 0) <= X"5";
 					elsif key_in_int = "1011" then
-						key_data_int <= X"8";
+						key_data_int(3 downto 0) <= X"8";
 					elsif key_in_int = "0111" then
-						key_data_int <= X"A";
+						key_data_int(3 downto 0) <= X"A";
 					end if;
 				when "1011" =>
 					if key_in_int = "1110" then
-						key_data_int <= X"3";
+						key_data_int(3 downto 0) <= X"3";
 					elsif key_in_int = "1101" then
-						key_data_int <= X"6";
+						key_data_int(3 downto 0) <= X"6";
 					elsif key_in_int = "1011" then
-						key_data_int <= X"9";
+						key_data_int(3 downto 0) <= X"9";
 					elsif key_in_int = "0111" then
-						key_data_int <= X"B";
+						key_data_int(3 downto 0) <= X"B";
 					end if;
 				when "0111" =>
 					if key_in_int = "1110" then
-						key_data_int <= X"F";
+						key_data_int(3 downto 0) <= X"F";
 					elsif key_in_int = "1101" then
-						key_data_int <= X"E";
+						key_data_int(3 downto 0) <= X"E";
 					elsif key_in_int = "1011" then
-						key_data_int <= X"D";
+						key_data_int(3 downto 0) <= X"D";
 					elsif key_in_int = "0111" then
-						key_data_int <= X"C";
+						key_data_int(3 downto 0) <= X"C";
 					end if;
 				when others =>
 					key_data_int <= key_data_int;
