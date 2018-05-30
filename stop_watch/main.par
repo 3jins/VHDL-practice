@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CSE024-PC::  Thu May 31 01:57:47 2018
+CSE024-PC::  Thu May 31 03:50:32 2018
 
 par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
 

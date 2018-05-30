@@ -111,26 +111,27 @@ Architecture behavioral of Entity count0to5 is up to date.
 Compiling vhdl file "D:/VHDL-practice/stop_watch/reg.vhd" in Library work.
 Architecture behavioral of Entity reg is up to date.
 Compiling vhdl file "D:/VHDL-practice/stop_watch/clock_divider_x4.vhd" in Library work.
-Architecture behavioral of Entity clock_divider_x4 is up to date.
+Entity <clock_divider_x4> compiled.
+Entity <clock_divider_x4> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/VHDL-practice/stop_watch/clock_divider.vhd" in Library work.
 Entity <clock_divider> compiled.
-Entity <clock_divider> (Architecture <Behavioral>) compiled.
+Entity <clock_divider> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/VHDL-practice/stop_watch/key_matrix.vhd" in Library work.
-Architecture behavioral of Entity key_matrix is up to date.
+Entity <key_matrix> compiled.
+Entity <key_matrix> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/VHDL-practice/stop_watch/shift_register.vhd" in Library work.
 Architecture behavioral of Entity shift_register is up to date.
 Compiling vhdl file "D:/VHDL-practice/stop_watch/seven_segment.vhd" in Library work.
 Architecture behavioral of Entity seven_segment is up to date.
 Compiling vhdl file "D:/VHDL-practice/stop_watch/main.vhd" in Library work.
-Entity <main> compiled.
-Entity <main> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity main is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
 Analyzing hierarchy for entity <main> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <clock_divider> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <clock_divider> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <key_matrix> in library <work> (architecture <behavioral>).
 
@@ -153,7 +154,7 @@ Analyzing hierarchy for entity <dff> in library <work> (architecture <behavioral
 Analyzing Entity <main> in library <work> (Architecture <behavioral>).
 Entity <main> analyzed. Unit <main> generated.
 
-Analyzing Entity <clock_divider> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <clock_divider> in library <work> (Architecture <behavioral>).
 Entity <clock_divider> analyzed. Unit <clock_divider> generated.
 
 Analyzing Entity <key_matrix> in library <work> (Architecture <behavioral>).
@@ -631,11 +632,11 @@ Offset:              14.126ns (Levels of Logic = 5)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.13 secs
+Total CPU time to Xst completion: 3.88 secs
  
 --> 
 
-Total memory usage is 206352 kilobytes
+Total memory usage is 206224 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    7 (   0 filtered)

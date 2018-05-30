@@ -1,15 +1,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity key_matrix is
-	port (
-		rst		: in std_logic;
-		clk		: in std_logic;
-		key_in	: in std_logic_vector(3 downto 0);
-		key_scan	: out std_logic_vector(3 downto 0);
-		key_data	: out std_logic_vector(3 downto 0);
-		key_event : OUT STD_LOGIC
-	);
+entity key_matrix is port (
+	rst, clk: in std_logic;
+	key_in: in std_logic_vector(3 downto 0);
+	key_scan: out std_logic_vector(3 downto 0);
+	key_data: out std_logic_vector(3 downto 0);
+	key_event: OUT STD_LOGIC
+);
 end key_matrix;
 
 architecture Behavioral of key_matrix is
@@ -26,7 +24,6 @@ signal key_data_int	: std_logic_vector(3 downto 0);		-- output
 signal key_in_int		: std_logic_vector(3 downto 0);		-- input
 signal seg_clk			: std_logic;
 signal key_temp		: std_logic_vector(15 downto 0);
---signal key_event		: std_logic;
 
 begin
 	dvd0: clock_divider_x4 port map(clk=>clk, rst=>rst, dclk=>seg_clk);
