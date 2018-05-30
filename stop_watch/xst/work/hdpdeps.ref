@@ -1,34 +1,55 @@
-V3 23
+V3 39
+FL D:/VHDL-practice/stop_watch/clock_divider.vhd 2018/05/31.01:57:27 P.20131013
+EN work/clock_divider 1527699459 FL D:/VHDL-practice/stop_watch/clock_divider.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/clock_divider/Behavioral 1527699460 \
+      FL D:/VHDL-practice/stop_watch/clock_divider.vhd EN work/clock_divider 1527699459
 FL D:/VHDL-practice/stop_watch/clock_divider_x4.vhd 2018/05/29.13:21:43 P.20131013
-EN work/clock_divider_x4 1527599169 \
+EN work/clock_divider_x4 1527699457 \
       FL D:/VHDL-practice/stop_watch/clock_divider_x4.vhd PB ieee/std_logic_1164 1381692176 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/clock_divider_x4/Behavioral 1527599170 \
+AR work/clock_divider_x4/Behavioral 1527699458 \
       FL D:/VHDL-practice/stop_watch/clock_divider_x4.vhd \
-      EN work/clock_divider_x4 1527599169
+      EN work/clock_divider_x4 1527699457
 FL D:/VHDL-practice/stop_watch/count0to5.vhd 2018/05/29.16:19:59 P.20131013
-EN work/count0to5 1527599167 FL D:/VHDL-practice/stop_watch/count0to5.vhd \
+EN work/count0to5 1527699453 FL D:/VHDL-practice/stop_watch/count0to5.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/count0to5/Behavioral 1527599168 \
-      FL D:/VHDL-practice/stop_watch/count0to5.vhd EN work/count0to5 1527599167
-FL D:/VHDL-practice/stop_watch/key_matrix.vhd 2018/05/29.22:06:05 P.20131013
-EN work/key_matrix 1527599171 FL D:/VHDL-practice/stop_watch/key_matrix.vhd \
+AR work/count0to5/Behavioral 1527699454 \
+      FL D:/VHDL-practice/stop_watch/count0to5.vhd EN work/count0to5 1527699453
+FL D:/VHDL-practice/stop_watch/dff.vhd 2018/05/30.20:49:21 P.20131013
+EN work/dff 1527699451 FL D:/VHDL-practice/stop_watch/dff.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/key_matrix/Behavioral 1527599172 \
-      FL D:/VHDL-practice/stop_watch/key_matrix.vhd EN work/key_matrix 1527599171 \
+AR work/dff/Behavioral 1527699452 \
+      FL D:/VHDL-practice/stop_watch/dff.vhd EN work/dff 1527699451
+FL D:/VHDL-practice/stop_watch/key_matrix.vhd 2018/05/31.01:01:26 P.20131013
+EN work/key_matrix 1527699461 FL D:/VHDL-practice/stop_watch/key_matrix.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/key_matrix/Behavioral 1527699462 \
+      FL D:/VHDL-practice/stop_watch/key_matrix.vhd EN work/key_matrix 1527699461 \
       CP clock_divider_x4
-FL D:/VHDL-practice/stop_watch/main.vhd 2018/05/29.22:06:01 P.20131013
-EN work/main 1527599175 FL D:/VHDL-practice/stop_watch/main.vhd \
+FL D:/VHDL-practice/stop_watch/main.vhd 2018/05/31.01:57:14 P.20131013
+EN work/main 1527699467 FL D:/VHDL-practice/stop_watch/main.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/main/Behavioral 1527599176 \
-      FL D:/VHDL-practice/stop_watch/main.vhd EN work/main 1527599175 \
-      CP clock_divider_x4 CP key_matrix CP seven_segment
+AR work/main/Behavioral 1527699468 \
+      FL D:/VHDL-practice/stop_watch/main.vhd EN work/main 1527699467 \
+      CP clock_divider CP key_matrix CP shift_register CP seven_segment
+FL D:/VHDL-practice/stop_watch/reg.vhd 2018/05/30.20:49:09 P.20131013
+EN work/reg 1527699455 FL D:/VHDL-practice/stop_watch/reg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/reg/Behavioral 1527699456 \
+      FL D:/VHDL-practice/stop_watch/reg.vhd EN work/reg 1527699455 CP dff
 FL D:/VHDL-practice/stop_watch/seven_segment.vhd 2018/05/29.21:14:28 P.20131013
-EN work/seven_segment 1527599173 FL D:/VHDL-practice/stop_watch/seven_segment.vhd \
+EN work/seven_segment 1527699465 FL D:/VHDL-practice/stop_watch/seven_segment.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/seven_segment/Behavioral 1527599174 \
-      FL D:/VHDL-practice/stop_watch/seven_segment.vhd EN work/seven_segment 1527599173 \
+AR work/seven_segment/Behavioral 1527699466 \
+      FL D:/VHDL-practice/stop_watch/seven_segment.vhd EN work/seven_segment 1527699465 \
       CP count0to5
+FL D:/VHDL-practice/stop_watch/shift_register.vhd 2018/05/31.00:54:39 P.20131013
+EN work/shift_register 1527699463 \
+      FL D:/VHDL-practice/stop_watch/shift_register.vhd PB ieee/std_logic_1164 1381692176
+AR work/shift_register/Behavioral 1527699464 \
+      FL D:/VHDL-practice/stop_watch/shift_register.vhd EN work/shift_register 1527699463 \
+      CP reg
 FL F:/fucker/stop_watch/clock_divider_x4.vhd 2018/05/25.20:07:05 P.20131013
 FL F:/fucker/stop_watch/key_matrix.vhd 2018/05/25.20:00:44 P.20131013
 FL F:/fucker/stop_watch/main.vhd 2018/05/25.19:22:24 P.20131013

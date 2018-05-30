@@ -9,29 +9,35 @@ Target Device  : xc3s2000
 Target Package : fg456
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Tue May 29 22:07:02 2018
+Mapped Date    : Thu May 31 01:57:41 2018
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:            27 out of  40,960    1%
-  Number of 4 input LUTs:                63 out of  40,960    1%
+  Number of Slice Flip Flops:            87 out of  40,960    1%
+  Number of 4 input LUTs:               126 out of  40,960    1%
 Logic Distribution:
-  Number of occupied Slices:             38 out of  20,480    1%
-    Number of Slices containing only related logic:      38 out of      38 100%
-    Number of Slices containing unrelated logic:          0 out of      38   0%
+  Number of occupied Slices:            117 out of  20,480    1%
+    Number of Slices containing only related logic:     117 out of     117 100%
+    Number of Slices containing unrelated logic:          0 out of     117   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          63 out of  40,960    1%
+  Total Number of 4 input LUTs:         149 out of  40,960    1%
+    Number used as logic:               126
+    Number used as a route-thru:         23
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
   Number of bonded IOBs:                 24 out of     333    7%
     IOB Flip Flops:                       4
-  Number of BUFGMUXs:                     1 out of       8   12%
+  Number of BUFGMUXs:                     3 out of       8   37%
 
-Average Fanout of Non-Clock Nets:                3.66
+Average Fanout of Non-Clock Nets:                3.03
 
-Peak Memory Usage:  228 MB
-Total REAL time to MAP completion:  3 secs 
+Peak Memory Usage:  229 MB
+Total REAL time to MAP completion:  4 secs 
 Total CPU time to MAP completion:   1 secs 
 
 NOTES:
@@ -86,14 +92,14 @@ INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
 '2100@117.16.136.129'.
 INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
 INFO:Security:56 - Part 'xc3s2000' is not a WebPack part.
-INFO:LIT:243 - Logical network key_data<23> has no load.
-INFO:LIT:395 - The above info message is repeated 47 more times for the
+INFO:LIT:243 - Logical network key_data<3> has no load.
+INFO:LIT:395 - The above info message is repeated 27 more times for the
    following (max. 5 shown):
-   key_data<22>,
-   key_data<21>,
-   key_data<20>,
-   key_data<19>,
-   key_data<18>
+   key_data<2>,
+   key_data<1>,
+   key_data<0>,
+   seginput1<3>,
+   seginput1<2>
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -102,13 +108,14 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   1 block(s) optimized away
+   2 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
 
 Optimized Block(s):
 TYPE 		BLOCK
+GND 		XST_GND
 VCC 		XST_VCC
 
 To enable printing of redundant blocks removed and signals merged, set the
